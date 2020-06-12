@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="sv" >
+<head>
+  <meta charset="UTF-8">
+  <title>Metrisk Data</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav>
+  <header>Försäljning statistik</header>
+  <section>
+    <header>Övergripande</header>
+    <ul>
+      <li class="active">Metrisk Data</li>
+      <li data-value="8">Rapporter</li>
+      <li>Grupper</li>
+    </ul>
+  </section>
+  <section>
+    <header>Konton</header>
+    <ul>
+      <li>Aktivitet</li>
+      <li data-value="4">Meddelanden</li>
+      <li>Nedladdningar</li>
+    </ul>
+  </section>
+  <section>
+    <header>Kategorier</header>
+    <ul>
+      <li class="red">Krediteringar</li>
+      <li class="yellow">Kanaler</li>
+      <li class="green">Direkt</li>
+      <li class="new"> <i class="fa fa-plus-circle"> </i> Lägg till kategori</li>
+    </ul>
+  </section>
+</nav>
+<article>
+  <header>
+    <div class="title">Översikt</div>
+    <div class="user"></div>
+    <div class="interval">
+      <ul>
+        <li>Vecka</li>
+        <li class="active">Månad</li>
+      </ul>
+    </div>
+  </header>
+  <section>
+    <div class="chart">
+      <canvas id="c1" width="900" height="200"></canvas>
+    </div>
+  </section>
+  <section>
+    <header>Statistik över försäljning</header>
+    <div class="inlineChart">
+      <canvas id="c2" width="100" height="100"></canvas>
+      <div class="info">
+        <div class="value">€36,146</div>
+        <div class="title">Försäljning kredit</div>
+      </div>
+    </div>
+    <div class="inlineChart">
+      <canvas id="c3" width="100" height="100"></canvas>
+      <div class="info">
+        <div class="value">€24,734</div>
+        <div class="title">Försäljning i kanaler</div>
+      </div>
+    </div>
+    <div class="inlineChart">
+      <canvas id="c4" width="100" height="100"></canvas>
+      <div class="info">
+        <div class="value">€15,650</div>
+        <div class="title">Direkt Försäljning</div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <table>
+      <thead>
+        <tr>
+          <th>November</th>
+          <th>Kvantitet</th>
+          <th>Totalt</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bookshelf Billy by IKEA</td>
+          <td>20</td>
+          <td>€2,342</td>
+        </tr>
+        <tr>
+          <td>Armchair Amiral by Karin Mobring</td>
+          <td>36</td>
+          <td>€5,550</td>
+        </tr>
+        <tr>
+          <td>Pillow Famnig by IKEA</td>
+          <td>150</td>
+          <td>€8,170</td>
+        </tr>
+        <tr>
+          <td>Leathersofa Klippan</td>
+          <td>25</td>
+          <td>€5,974</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</article>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
